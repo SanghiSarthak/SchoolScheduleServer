@@ -14,7 +14,8 @@ const app = express();
 
 app.use(morgan('tiny'));
 const corsOptions = {
-    origin: 'http://127.0.0.1:5500', 
+    //origin: 'http://127.0.0.1:5500',
+    origin: 'https://schoolfrontend-cu35.onrender.com/',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true 
