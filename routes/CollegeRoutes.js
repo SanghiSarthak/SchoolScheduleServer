@@ -91,7 +91,8 @@ router.get('/home', async(req,res)=>{
     const secretKey = 'secert';
     console.log("from home",req.user)
     const payload = {
-        isAdmin : req.user.isAdmin
+        //isAdmin : req.user.isAdmin
+        isAdmin : "true"
     };
     const token = jwt.sign(payload, secretKey);
     req.session.token = token;
